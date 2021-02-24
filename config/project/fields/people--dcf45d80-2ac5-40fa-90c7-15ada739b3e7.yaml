@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: bc97ed14-3643-4b76-bea5-9e7c4c684bcd
+handle: people
+instructions: ''
+name: People
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: 'Add a person'
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:bc4fe058-746b-4c93-8cbe-4dc246c67cce'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

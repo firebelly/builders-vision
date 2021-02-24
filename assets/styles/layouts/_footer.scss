@@ -1,0 +1,9 @@
+// Footer
+
+footer {
+  @include clearfix;
+
+  // Desktop styles
+  @include media-md {
+  }
+}

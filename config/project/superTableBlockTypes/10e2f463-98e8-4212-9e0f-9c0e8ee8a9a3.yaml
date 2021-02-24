@@ -1,0 +1,207 @@
+field: 417d98c8-7b92-45f8-8a4c-ddfdedfaae14
+fieldLayouts:
+  5db52081-6623-421c-b7ec-379bf5eb7fae:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: bc836ebe-f9f3-43a5-afc3-503a0cb981ef
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5aaa36f3-8670-4575-ba18-dbd0ef3f6f57
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e381e837-e7df-4177-a77b-c4c5b7510004
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6380905e-fa0a-441d-8f48-57b593534e47
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5aaa36f3-8670-4575-ba18-dbd0ef3f6f57:
+    contentColumnType: text
+    fieldGroup: null
+    handle: intro
+    instructions: ''
+    name: Intro
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  6380905e-fa0a-441d-8f48-57b593534e47:
+    contentColumnType: text
+    fieldGroup: null
+    handle: entities
+    instructions: ''
+    name: Entities
+    searchable: true
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Title
+                -
+                  - handle
+                  - title
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Description
+                -
+                  - handle
+                  - description
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - multiline
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'CTA Text'
+                -
+                  - handle
+                  - ctaText
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col4
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'CTA URL'
+                -
+                  - handle
+                  - ctaUrl
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+            -
+              - col3
+              - ''
+            -
+              - col4
+              - ''
+      maxRows: ''
+      minRows: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  bc836ebe-f9f3-43a5-afc3-503a0cb981ef:
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e381e837-e7df-4177-a77b-c4c5b7510004:
+    contentColumnType: text
+    fieldGroup: null
+    handle: entitiesHeadline
+    instructions: ''
+    name: 'Entities Headline'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

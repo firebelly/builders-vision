@@ -1,0 +1,34 @@
+{% set blockWrapped = false %}
+
+{% if entry.pageBlocks|length %}<div class="page-blocks page-section">{% endif %}
+{% for block in entry.pageBlocks.with(['image:image']).all() %}
+  {% switch block.type %}
+
+    {% case "text" %}
+      {% if not blockWrapped %}<div class="container">{% set blockWrapped = true %}{% endif %}
+      {% include "page-blocks/_text" with { block: block } %}
+
+    {% case "image" %}
+      {% if not blockWrapped %}<div class="container">{% set blockWrapped = true %}{% endif %}
+      {% include "page-blocks/_image" with { block: block } %}
+
+    {% case 'textGrid' %}
+	    {% if not blockWrapped %}<div class="container">{% set blockWrapped = true %}{% endif %}
+      <div class="block-text-grid">
+        <ul class="text-blocks grid">
+          {% for textBlock in block.textBlocks.all() %}
+            <li class="text-block grid-item one-half">
+              <h4 class="divot">{{ textBlock.headline }}</h4>
+              <div class="body user-content">
+                {{ textBlock.body }}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+  {% endswitch %}
+{% endfor %}
+
+{% if blockWrapped %}</div><!-- /.container -->{% endif %}
+{% if entry.pageBlocks|length %}</div><!-- /.page-blocks -->{% endif %}

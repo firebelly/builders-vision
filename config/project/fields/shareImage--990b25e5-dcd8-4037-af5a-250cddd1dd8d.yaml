@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: b63d8e01-e3f7-46ba-98f4-864fe31e4071
+handle: shareImage
+instructions: 'Used when sharing a post or page on social'
+name: 'Share Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:20ae6231-85ed-4a0e-ab09-9c953a8956f8'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: 'Select image'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:20ae6231-85ed-4a0e-ab09-9c953a8956f8'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

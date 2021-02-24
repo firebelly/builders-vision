@@ -1,0 +1,27 @@
+/.env
+/.idea
+/vendor
+.DS_Store
+
+# Yarn/Webpack
+.cache-loader
+dist
+node_modules
+npm-debug.log
+yarn-error.log
+resources/assets/config-local.json
+*.map
+
+# User uploads
+/web/uploads
+# Generated files
+/web/imager
+
+# Server files
+.user.ini
+
+# Fabric
+*.pyc
+
+# Fonts
+assets/fonts/*

@@ -1,0 +1,53 @@
+{% if entry.pageHeader|length %}
+<div class="image-header page-header">
+  <div class="container">
+
+    <div class="wrap -reveal">
+      <div class="header-wrap">
+        <h3 class="divot">{{ entry.pageHeader.subhead }}</h3>
+        <h2 class="h1">{{ entry.pageHeader.headline }}</h2>
+      </div>
+
+      <div class="body-wrap user-content">
+        {{ entry.pageHeader.body }}
+      </div>
+
+      {% if entry.pageHeader.cta|length and entry.pageHeader.cta[0].url and entry.pageHeader.cta[0].text %}
+        <p class="cta">
+          <a href="{{ entry.pageHeader.cta[0].url }}">{{ entry.pageHeader.cta[0].text }}</a>
+        </p>
+      {% endif %}
+
+      <div class="image-wrap">
+        <div class="lines -large -one" aria-hidden="true">
+          {%- for i in 1..4 %}<i></i>{% endfor -%}
+        </div>
+
+        <div class="staggered-image -reveal">
+          {% if entry.pageHeader.image|length > 0 %}
+            {% set images = entry.pageHeader.image.all() %}
+            <picture>
+              {% if images|length > 1 %}
+                {% set treatedImage = craft.imager.transformImage(images[1], { width: 600, height: 580, mode: 'crop' }) %}
+                {% if treatedImage %}
+                  <source media="(max-width: 750px)" srcset="{{ treatedImage.getUrl() }}">
+                {% endif %}
+              {% endif %}
+              {% set treatedImage = craft.imager.transformImage(images[0], { mode: 'crop', width: 960, height: 920, }) %}
+              {% if treatedImage %}
+                <img src="{{ treatedImage.getUrl() }}" alt="{{ images[0].title }}">
+              {% endif %}
+            </picture>
+          {% endif %}
+        </div>
+
+        <div class="lines -two" aria-hidden="true">
+          {%- for i in 1..3 %}<i></i>{% endfor -%}
+        </div>
+      </div>
+
+    </div><!-- /.wrap -->
+
+  </div>
+</div>
+{% endif %}

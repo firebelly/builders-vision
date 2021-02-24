@@ -1,0 +1,36 @@
+// Buttons
+
+%button,
+.button {
+  @include font-regular;
+  @include transition(background);
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.085em;
+  border: 1px solid color(independence);
+  background: transparent;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: underline;
+  padding: 12px 18px;
+  // svg {
+  //   @include transition(all);
+  // }
+
+  &:focus,
+  &:hover {
+    svg {
+      transform: translate(100%, -50%);
+      fill: color(white);
+    }
+    background: color(green-yellow);
+    outline: none;
+  }
+  &:active {
+  }
+
+  @include media-md {
+  }
+}

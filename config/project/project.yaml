@@ -1,0 +1,74 @@
+dateModified: 1614185265
+email:
+  fromEmail: nate@firebellydesign.com
+  fromName: 'Builders Vision'
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  admin-bar:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.1.0
+    settings:
+      customCss: ''
+      customLinks:
+        -
+          __assoc__:
+            -
+              - linkLabel
+              - 'Site Options'
+            -
+              - linkUrl
+              - /admin/globals/siteOptions
+            -
+              - adminOnly
+              - ''
+      displayDashboardLink: true
+      displayDefaultEditSection: true
+      displayEditAuthor: true
+      displayEditDate: true
+      displayGreeting: true
+      displayGuideLink: true
+      displayLogout: true
+      displayRevisionNote: true
+      displaySettingsLink: true
+      enableMobileMenu: true
+      widgets:
+        __assoc__:
+          -
+            - admin-bar_edit-links
+            - ''
+  assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      expandSingles: '1'
+      redirectToEntry: '1'
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+system:
+  edition: solo
+  live: true
+  name: 'Builders Vision'
+  schemaVersion: 3.6.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

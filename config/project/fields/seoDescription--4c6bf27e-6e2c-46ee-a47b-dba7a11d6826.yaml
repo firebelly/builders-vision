@@ -1,0 +1,18 @@
+contentColumnType: string(620)
+fieldGroup: b63d8e01-e3f7-46ba-98f4-864fe31e4071
+handle: seoDescription
+instructions: 'Used for meta description to improve SEO'
+name: 'SEO Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 155
+  code: ''
+  columnType: null
+  initialRows: '2'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

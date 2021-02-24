@@ -1,0 +1,173 @@
+// Typography
+
+// @font-face {
+//     font-family: 'Pitch';
+//     src: url('../fonts/pitch.eot');
+//     src: url('../fonts/pitch.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/pitch.woff2') format('woff2'),
+//          url('../fonts/pitch.woff') format('woff'),
+//          url('../fonts/pitch.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// Fonts
+$font-serif: 'Ovo', serif;
+$font-sans-serif: 'Open Sans', sans-serif;
+$font-mono: 'Pitch', monospace;
+
+@mixin font-regular {
+  font-weight: normal;
+  font-family: $font-sans-serif;
+  // font-feature-settings: "kern" 1;
+  // font-kerning: normal;
+}
+@mixin font-header {
+  font-weight: normal;
+  font-family: $font-serif;
+}
+@mixin font-mono {
+  font-weight: normal;
+  font-family: $font-mono;
+}
+
+@mixin stat {
+  @include font-header;
+  font-family: $font-mono;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 62px;
+  letter-spacing: -0.02em;
+
+  @include media-md {
+    font-size: 96px;
+    line-height: 96px;
+  }
+}
+
+@mixin h1 {
+  @include font-header;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 42px;
+
+  @include media-md {
+    font-size: 96px;
+    line-height: 84px;
+  }
+}
+@mixin h2 {
+  @include font-header;
+  font-size: 24px;
+  line-height: 30px;
+
+  @include media-md {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+@mixin h3 {
+  @include font-header;
+  font-size: 18px;
+  line-height: 24px;
+
+  @include media-md {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@mixin h4 {
+  @include font-mono;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+@mixin p0 {
+  @include font-regular;
+  font-size: 18px;
+  line-height: 24px;
+
+  @include media-md {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+%p0,
+.p0 {
+  @include p0;
+}
+
+@mixin p1 {
+  @include font-regular;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+
+  @include media-md {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+}
+%p1,
+.p1 {
+  @include p1;
+}
+
+@mixin p2 {
+  @include font-regular;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+
+  @include media-md {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+%p2,
+.p2 {
+  @include p2;
+}
+
+// Global header styles
+%h1,.h1,h1 {
+  @include h1;
+}
+%h2,.h2,h2 {
+  @include h2;
+}
+
+%h3,.h3,h3 {
+  @include h3;
+}
+%h4,.h4,h4 {
+  @include h4;
+}
+
+// Reset all margins
+dl,
+dt,
+dd,
+p,
+ol,
+ul,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+
+// Basic paragraph styles
+address,
+p,
+figcaption {
+  @include p2;
+  em {
+   font-style: italic;
+  }
+}

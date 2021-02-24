@@ -1,0 +1,47 @@
+// Utility classes
+.hidden,
+.hide {
+  display: none;
+}
+.loading {
+  opacity: 0.5;
+}
+
+// Visually hide, accessibility-friendly
+.screen-reader-text,
+.sr-only {
+  @include sr-only;
+}
+
+.clearfix,.cf {
+  @include clearfix;
+}
+
+.bigclicky {
+  cursor: pointer;
+}
+
+// Visibility classes (borrowing nomenclature from Foundation)
+.show-for-small-up {
+  display: none;
+  @include media-sm {
+    display: block;
+    &.-inline {
+      display: inline;
+    }
+  }
+}
+.show-for-medium-up {
+  display: none!important;
+  @include media-md {
+    display: block!important;
+    &.-inline {
+      display: inline!important;
+    }
+  }
+}
+.hide-for-medium-up {
+  @include media-md {
+    display: none !important;
+  }
+}

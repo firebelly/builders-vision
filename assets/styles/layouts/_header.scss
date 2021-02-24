@@ -1,0 +1,70 @@
+// Header & nav
+
+.header {
+  .container {
+    z-index: z(header);
+  }
+
+  // Desktop styles
+  @include media-nav {
+  }
+}
+
+// Nav is stuck
+body.nav-stuck {
+  #top {
+    // Offset for header height when nav is fixed
+    margin-top: $mobile-header-height;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: color(white);
+    z-index: z(nav);
+    .logo-full {
+      opacity: 0;
+    }
+    .logo-small {
+      opacity: 1;
+    }
+    @include drop-shadow;
+  }
+
+  // Desktop styles
+  @include media-nav {
+  }
+}
+
+// Nav is open for hambusiness
+body.nav-open {
+  #adminbar {
+    display: none;
+  }
+  .hamburger {
+    opacity: 0;
+  }
+  .nav-main {
+    transform: translateX(0);
+  }
+  // Mobile-only
+  @include max-screen($breakpoint-nav) {
+  }
+}
+
+// Primary nav container
+.nav-main {
+  @include clearfix;
+  @include font-regular;
+  @include transition(transform);
+
+  // Mobile only styles
+  @include max-screen($breakpoint-nav) {
+  }
+
+  // Desktop styles
+  @include media-nav {
+  }
+}

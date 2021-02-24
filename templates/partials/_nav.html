@@ -1,0 +1,32 @@
+{% set navItems = [
+  {'slug': 'mission',    'name': 'Mission' },
+  {'slug': 'work',       'name': 'Work' },
+  {'slug': 'about-us',   'name': 'About Us'},
+  {'slug': 'leadership', 'name': 'Leadership'},
+  {'slug': 'principles', 'name': 'Principles'},
+] %}
+
+<div class="header">
+  <div class="container">
+    <button class="toggle-nav hamburger">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="12" x2="4" y2="12" stroke="#4F5565" stroke-width="2"/>
+        <line x1="20" y1="17" x2="4" y2="17" stroke="#4F5565" stroke-width="2"/>
+        <line x1="20" y1="7" x2="4" y2="7" stroke="#4F5565" stroke-width="2"/>
+      </svg>
+    </button>
+    <nav class="nav-main" aria-live="polite">
+      <button class="close-nav">
+        <svg viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="38.4997" height="3.85008" transform="matrix(0.70865 -0.705561 0.703041 0.71115 0.720703 28.0933)" />
+          <rect width="38.5003" height="3.85003" transform="matrix(-0.705851 -0.708361 0.705851 -0.708361 27.8857 30.8306)" />
+        </svg>
+      </button>
+      <ul>
+        {% for navItem in navItems %}
+          <li class="nav-{{ navItem.slug }}"><a{{ entry is defined and entry.slug == navItem.slug or craft.app.request.getSegment(1) == navItem.slug ? ' class="-active"'|raw : '' }} href="/{{ navItem.slug }}"><span data-title="{{ navItem.name }}">{{ navItem.name }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>

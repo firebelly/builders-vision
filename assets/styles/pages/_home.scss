@@ -1,0 +1,48 @@
+// Homepage
+
+body.page-home {
+  &.nav-stuck {
+    #top {
+      // Offset for header height when nav is fixed
+      // margin-top: grid(10);
+      @include media-nav {
+        // margin-top: 52px;
+      }
+    }
+    @include media-nav {
+    }
+  }
+
+
+  .wrap {
+    @include clearfix;
+  }
+  .image-wrap {
+    position: relative;
+  }
+
+  // Desktop styles
+  @include media-md {
+  }
+}
+
+.homepage-header {
+  @include clearfix;
+
+  .header-wrap {
+    // width: columns(9);
+  }
+
+  .body-wrap {
+    // margin-top: grid(2);
+  }
+
+  // Desktop styles
+  @include media-nav {
+    p {
+      @include p1;
+    }
+  }
+
+}
+

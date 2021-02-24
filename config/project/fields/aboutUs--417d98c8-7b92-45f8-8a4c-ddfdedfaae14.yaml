@@ -1,0 +1,48 @@
+contentColumnType: string
+fieldGroup: bc97ed14-3643-4b76-bea5-9e7c4c684bcd
+handle: aboutUs
+instructions: ''
+name: 'About Us'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - bc836ebe-f9f3-43a5-afc3-503a0cb981ef
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 5aaa36f3-8670-4575-ba18-dbd0ef3f6f57
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - e381e837-e7df-4177-a77b-c4c5b7510004
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 6380905e-fa0a-441d-8f48-57b593534e47
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_aboutus}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

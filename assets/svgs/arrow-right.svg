@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8.75L14 8.75L14 7.25L1 7.25L1 8.75Z" fill="#4F5565"/>
+<path d="M8 14L14 8" stroke="#4F5565" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M8 2L14 8" stroke="#4F5565" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+<mask id="path-4-inside-1" fill="white">
+<path d="M11 11L11 5L13 7.25668L13 8.74332L11 11Z"/>
+</mask>
+<path d="M11 11L11 5L13 7.25668L13 8.74332L11 11Z" fill="#4F5565"/>
+<path d="M11 11L9 11L9 16.2721L12.4968 12.3265L11 11ZM11 5L12.4968 3.67347L9 -0.272075L9 5L11 5ZM13 7.25668L15 7.25668L15 6.49797L14.4968 5.93015L13 7.25668ZM13 8.74332L14.4968 10.0698L15 9.50203L15 8.74332L13 8.74332ZM13 11L13 5L9 5L9 11L13 11ZM9.50323 6.32653L11.5032 8.58321L14.4968 5.93015L12.4968 3.67347L9.50323 6.32653ZM11 7.25668L11 8.74332L15 8.74332L15 7.25668L11 7.25668ZM11.5032 7.41679L9.50323 9.67347L12.4968 12.3265L14.4968 10.0698L11.5032 7.41679Z" fill="#4F5565" mask="url(#path-4-inside-1)"/>
+</svg>

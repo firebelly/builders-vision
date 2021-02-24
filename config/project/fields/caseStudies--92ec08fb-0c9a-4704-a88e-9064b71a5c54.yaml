@@ -1,0 +1,48 @@
+contentColumnType: string
+fieldGroup: bc97ed14-3643-4b76-bea5-9e7c4c684bcd
+handle: caseStudies
+instructions: ''
+name: 'Case Studies'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - e77cc91d-1277-4656-9dca-611a0c130a59
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 69834ece-7791-49f1-ab13-6f300b05ec70
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - fa489c68-6100-4bf1-9089-6fdc821a6833
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - f2e1f450-5e87-4da6-ba26-74303798123e
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_casestudies}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: 'Add a case study'
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

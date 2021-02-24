@@ -1,0 +1,48 @@
+contentColumnType: string
+fieldGroup: bc97ed14-3643-4b76-bea5-9e7c4c684bcd
+handle: work
+instructions: ''
+name: Work
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 3b2e4185-7760-4245-a3e3-51959746ba1d
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - a2e40ab4-bb0a-425b-9b1b-1d19eba9332b
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 47820fdd-47e8-49c6-ad00-621d3d686dae
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 7ab63481-7b58-4c6e-9ee9-c2dc1613fb06
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_work}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

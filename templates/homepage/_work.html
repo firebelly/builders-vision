@@ -1,0 +1,38 @@
+<div class="page-section" data-page="work">
+  <div class="container">
+
+    <div class="section-header">
+      <h4>Section 02 — Work</h4>
+      <h2 class="h1">Our Work</h2>
+    </div>
+
+    <div class="wrap">
+      <div class="header-wrap">
+        <h2>{{ entry.work.headline }}</h2>
+      </div>
+
+      <div class="body-wrap user-content">
+        {{ entry.work.intro }}
+      </div>
+    </div>
+
+    <div class="image-wrap">
+      <div class="staggered-image -reveal">
+        {% if entry.work.image|length > 0 %}
+          {% set image = entry.work.image[0] %}
+          <picture>
+            {% do image.setTransform({ width: 277, height: 277 }) %}
+            {{ tag('img', {
+                src: image.url,
+                width: image.width,
+                height: image.height,
+                srcset: image.getSrcset(['2x', '4x']),
+                alt: image.title,
+            }) }}
+          </picture>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+</div>

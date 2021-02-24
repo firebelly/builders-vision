@@ -1,0 +1,39 @@
+<div class="homepage-header page-header">
+  <div class="container">
+
+    <div class="wrap">
+      <div class="header-wrap">
+        <h2 class="h1">{{ entry.homepageHeader.headline }}</h2>
+      </div>
+
+      <div class="body-wrap user-content">
+        {{ entry.homepageHeader.intro }}
+
+        {% if entry.homepageHeader.cta|length and entry.homepageHeader.cta[0].url and entry.homepageHeader.cta[0].text %}
+          <p class="cta">
+            <a class="button" href="{{ entry.homepageHeader.cta[0].url }}">{{ entry.homepageHeader.cta[0].text }}</a>
+          </p>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="image-wrap">
+      <div class="staggered-image -reveal">
+        {% if entry.homepageHeader.image|length > 0 %}
+          {% set image = entry.homepageHeader.image[0] %}
+          <picture>
+            {% do image.setTransform({ width: 277, height: 277 }) %}
+            {{ tag('img', {
+                src: image.url,
+                width: image.width,
+                height: image.height,
+                srcset: image.getSrcset(['2x', '4x']),
+                alt: image.title,
+            }) }}
+          </picture>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+</div>

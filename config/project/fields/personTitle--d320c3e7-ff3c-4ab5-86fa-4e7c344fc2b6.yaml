@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 33d11d09-4e3d-441b-8ad3-94dc304f3413
+handle: personTitle
+instructions: ''
+name: Title
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: people
+name: People
+propagationMethod: all
+siteSettings:
+  2727cef7-b711-4772-9f76-de4d80c07905:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 4be8d4e2-f10d-416c-a490-e8b40a9a7664
+type: structure

@@ -1,0 +1,92 @@
+// Styling of content that is editable in wysiwyg
+
+.user-content {
+  @include clearfix();
+
+  * + * {
+    margin-top: grid(1);
+    @include media-md {
+      margin-top: grid(2);
+    }
+  }
+  // Give headers more space
+  * + h2,
+  * + h3,
+  * + h4 {
+    margin-top: grid(3);
+    @include media-md {
+      margin-top: grid(5);
+    }
+  }
+
+  h2 {
+    font-weight: bold;
+    letter-spacing: 0;
+    // First paragraph after h2
+    + p:not(.cta) {
+      margin-top: grid(1);
+      @include media-md {
+        margin-top: grid(2);
+      }
+    }
+  }
+
+  a:not(.button) {
+    @include inline-link;
+  }
+  .button a,
+  a.button {
+    border: none;
+    margin-right: grid(1);
+  }
+
+  p.cta {
+    a {
+      @extend %button;
+    }
+  }
+
+  ol,
+  ul {
+    @include p2;
+    padding: 0 0 0 3em;
+    li {
+      margin: 0 0 5px;
+    }
+  }
+
+  blockquote {
+    margin: grid(4) 0;
+    padding: 0 $global-padding;
+    border-left: 2px solid color(black);
+  }
+
+  // Custom bullets
+  ul li {
+    list-style-type: none;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      border-bottom: 2px solid color(independence-02);
+      left: -2em;
+      top: 0.4em;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 0;
+    border-bottom: 1px solid color(independence-02);
+  }
+
+  // em {
+  //   font-style: italic;
+  // }
+
+  strong {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,48 @@
+contentColumnType: string
+fieldGroup: bc97ed14-3643-4b76-bea5-9e7c4c684bcd
+handle: homepageHeader
+instructions: ''
+name: 'Homepage Header'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 3626b2bd-0f32-4a2a-9ca2-7fdd5a8ff18e
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 51f9cc9c-3256-467c-8a3a-4a24e28ab6e8
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 3ea984d1-0cc3-4409-b4c1-63aedac58728
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 736a54c8-e0f8-42b7-9a25-3167ce5a39f1
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_homepageheader}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

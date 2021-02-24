@@ -1,0 +1,41 @@
+contentColumnType: string
+fieldGroup: bc97ed14-3643-4b76-bea5-9e7c4c684bcd
+handle: principles
+instructions: ''
+name: Principles
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - a7321055-422c-43c3-a96a-db8b339c316b
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 5ea08ac7-083a-41fa-9cb2-c694eb28391a
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 76f1b209-daad-4400-bb77-d13f2460b277
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_principles}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

@@ -1,0 +1,257 @@
+field: 5be41a21-a368-4829-a722-65c12b8266e3
+fieldLayouts:
+  1b57c837-4820-4e2b-a94e-915a92ff26da:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3b2e4185-7760-4245-a3e3-51959746ba1d
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a2e40ab4-bb0a-425b-9b1b-1d19eba9332b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 47820fdd-47e8-49c6-ad00-621d3d686dae
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7ab63481-7b58-4c6e-9ee9-c2dc1613fb06
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3b2e4185-7760-4245-a3e3-51959746ba1d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '2'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  47820fdd-47e8-49c6-ad00-621d3d686dae:
+    contentColumnType: text
+    fieldGroup: null
+    handle: impactAreas
+    instructions: ''
+    name: 'Impact Areas'
+    searchable: true
+    settings:
+      addRowLabel: 'Add an impact area'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Icon
+                -
+                  - handle
+                  - icon
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Agriculture
+                        -
+                          - value
+                          - agriculture
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Oceans
+                        -
+                          - value
+                          - oceans
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Animals
+                        -
+                          - value
+                          - animals
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Food
+                        -
+                          - value
+                          - food
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Energy
+                        -
+                          - value
+                          - energy
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Arts
+                        -
+                          - value
+                          - arts
+                        -
+                          - default
+                          - false
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Title
+                -
+                  - handle
+                  - title
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Description
+                -
+                  - handle
+                  - description
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - multiline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - agriculture
+            -
+              - col2
+              - ''
+            -
+              - col3
+              - ''
+      maxRows: ''
+      minRows: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  7ab63481-7b58-4c6e-9ee9-c2dc1613fb06:
+    contentColumnType: text
+    fieldGroup: null
+    handle: outroHeadline
+    instructions: ''
+    name: 'Outro Headline'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a2e40ab4-bb0a-425b-9b1b-1d19eba9332b:
+    contentColumnType: text
+    fieldGroup: null
+    handle: intro
+    instructions: ''
+    name: Intro
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field

@@ -1,0 +1,11 @@
+{
+	"formatting": [
+    "p"
+  ],
+  "buttons": [
+    "link",
+    "lists"
+  ],
+  "toolbarFixed": true,
+  "linkNewTab": true
+}
